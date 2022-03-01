@@ -1,0 +1,1261 @@
+$crna:#000;
+$bela: #fff;
+$svetloPlava: #b7bedb;
+$siva: #636363;
+$svetloSiva: #8f8f8f;
+
+@mixin d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin tranzicija{
+  transition: all 0.2s;
+}
+
+@mixin center-block{
+  width: 90%;
+  margin: 0rem auto;
+}
+
+@mixin naslov{
+  text-align: center;
+  padding: 30px 0px 45px 0px;
+  h2{
+    font-size: 40px;
+    color: $crna;
+  }
+  hr{
+    border: 1px solid $crna;
+    margin: 5px auto;
+    width: 20%;
+  }
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+.wrapper{
+  @include center-block();
+}
+
+header{
+  width: 100%;
+  background-color: $bela;
+  .wrapper{
+    @include d-flex();
+    justify-content: space-between;
+    padding: 0.6rem;
+    #logo{
+      margin-top: 0.6rem;
+      a{
+        color: $crna;
+        text-decoration: none;
+        font-size: 35px;
+        &:hover{
+        color: $svetloPlava;
+        }
+        @include tranzicija();
+        .drugo-slovo{
+          color: $svetloPlava;
+        }
+      }
+    }
+    nav{
+      margin: 1.3rem 0rem;
+      ul{
+        list-style-type: none;
+        @include d-flex();
+        justify-content: flex-end;
+        li{
+          margin: 0px 21px;
+          a{
+            color: $crna;
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            @include tranzicija();
+            &:hover{
+              color: $svetloPlava;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main{
+  width: 100%;
+  #background{
+    width: 100%;
+    height: 1050px;
+    background-image: url('/img/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(87%);
+    position: relative;
+    .wrapper{
+      @include center-block();
+      #img-title{
+        position: absolute;
+        top: 37%;
+        left: 6%;
+        h1{
+          font-size: 75px;
+          color: $svetloPlava;
+        }
+        .manji-tekst{
+          font-size: 39px;
+          color: $bela;
+        }
+        .veci-tekst{
+          font-size: 45px;
+          color: $bela;
+        }
+        hr{
+          margin-top: 1rem;
+          border: 1px solid $svetloPlava;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  #skills{
+    width: 100%;
+    background-color: $bela;
+    margin-bottom: 90px;
+    .title{
+      text-align: center;
+      padding: 30px 0px 45px 0px;
+      h2{
+        font-size: 40px;
+        color: $crna;
+      }
+      hr{
+        border: 1px solid $crna;
+        margin: 5px auto;
+        width: 10rem;
+      }
+      p{
+        font-size: 20px
+      }
+    }
+    .wrapper{
+      @include center-block();
+      width: 50%;
+      .skills-range{
+        margin-bottom: 30px;
+        .info{
+          @include d-flex();
+          align-items: center;
+          justify-content: space-between;
+          span{
+            font-size: 25px;
+          }
+        }
+        .content-range{
+          height: 10px;
+          width: 100%;
+          background-color: $crna;
+          position: relative;
+        }
+        .content-range::before{
+          content: "";
+          position: absolute;
+          background-color: $svetloPlava;
+          top: 0;
+          left: 0;
+          height: 100%;
+        }
+        .html::before{
+          width: 90%;
+        }
+        .css::before{
+          width: 70%;
+        }
+        .js::before{
+          width: 50%;
+        }
+        .c::before{
+          width: 60%;
+        }
+        .ps::before{
+          width: 90%;
+        }
+        .php::before{
+          width: 65%;
+        }
+        .python::before{
+          width: 70%;
+        }
+      }
+    }
+  }
+  #projects{
+    width: 100%;
+    margin-top: 70px;
+    padding-top: 20px;
+    padding-bottom: 23rem;
+    background-color: $svetloPlava;
+    .title{
+      @include naslov();
+      hr{
+        width: 23%;
+      }
+      p{
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+    .wrapper{
+      @include center-block();
+      @include d-flex();
+      justify-content: space-evenly;
+      .project-card{
+        width: 27%;
+        position: relative;
+        height: 100px;
+        text-align: center;
+        &:hover img{
+          opacity: 0.3;
+        }
+        &:hover .img-hover{
+          opacity: 1;
+        }
+        p{
+          font-size: 23px;
+          margin-top: 10px;
+        }
+        a{
+          color: $crna;
+          text-decoration: none;
+        }
+        img{
+          border: 2px solid $bela;
+          width: 100%;
+          filter: blur(1.5px);
+          transition: 0.5s ease;
+          &:hover{
+            filter: none;
+          }
+        }
+      }
+      .img-hover {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .text {
+          background-color: $svetloPlava;
+          color: white;
+          font-size: 18px;
+          padding: 16px 32px;
+        }
+      }
+    }
+  }
+  #services{
+    width: 100%;
+    background-color: $bela;
+    margin-top: 20px;
+    padding-bottom: 60px;
+    .title{
+      @include naslov();
+      hr{
+        width: 9.5%;
+      }
+      p{
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+    .wrapper{
+      @include d-flex();
+      justify-content: space-around;
+      margin-top: 15px;
+      .service{
+        padding-top: 20px;
+        width: 19%;
+        text-align: center;
+        background-color: $svetloPlava;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 15px;
+        padding: 50px;
+        i{
+          font-size: 70px;
+          margin-bottom: 10px;
+        }
+        h2{
+          font-size: 30px;
+        }
+        p{
+          font-size: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  #about-me{
+    width: 100%;
+    padding-bottom: 7rem;
+    background-color: $svetloPlava;
+    .title{
+      @include naslov();
+      hr{
+        width: 15.5%;
+      }
+      p{
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+    .wrapper{
+      @include center-block();
+      @include d-flex();
+      justify-content: space-evenly;
+      #author{
+        width: 18%;
+        img{
+          width: 100%;
+          border-radius: 15px;
+          border: 1px solid $bela;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+      }
+      #about-author{
+        width: 30%;
+        margin-top: 80px;
+        text-align: center;
+        h3{
+          font-size: 30px;
+        }
+        p{
+          font-size: 25px;
+          color: $bela;
+        }
+      }
+      #biography{
+        width: 30%;
+        margin-top: 50px;
+        padding-left: 25px;
+        h3{
+          font-size: 30px;
+        }
+        p{
+          font-size: 1.55rem;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  #contact{
+    width: 100%;
+    background-color: $bela;
+    height: 585px;
+    .title{
+      @include naslov();
+      hr{
+        width: 11%;
+      }
+      p{
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+    .wrapper{
+      @include center-block();
+      @include d-flex();
+      justify-content: space-between;
+      padding-left: 20px;
+      #contact-form{
+        text-align: center;
+        padding: 10px 20px 20px 20px;
+        width: 49%;
+        // box-shadow: rgba(183, 190, 219, 0.6) 0px 1px 3px 0px, rgba(183, 190, 219, 0.6) 0px 0px 0px 1px;
+        border-radius: 20px;
+        #row-1{
+          width: 100%;
+          #fname{
+            width: 49%;
+            margin-right: 1%;
+            margin-bottom: 50px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            border-bottom: 1px solid $svetloSiva;
+            &:focus{
+              border-color: $svetloPlava;
+            }
+          }
+          #lname{
+            width: 49%;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            border-bottom: 1px solid $svetloSiva;
+            &:focus{
+              border-color: $svetloPlava;
+            }
+          }
+        }
+        #email{
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 18px;
+          border-bottom: 1px solid $svetloSiva;
+          margin-bottom: 50px;
+          &:focus{
+            border-color: $svetloPlava;
+          }
+        }
+        #question{
+          font-size: 18px;
+          outline: none;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          padding: 10px;
+          border: 1px solid $svetloSiva;
+          width: 100%;
+          &:focus{
+            border-color: $svetloPlava;
+          }
+        }
+        #send{
+          font-size: 18px;
+          border: none;
+          background-color: $svetloPlava;
+          color: $bela;
+          font-weight: 500;
+          width: 20%;
+          height: 30px;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover{
+            background-color: $crna;
+          }
+        }
+      }
+      #contact-content{
+        width: 48%;
+        padding-left: 20rem;
+        .contact-link{
+          width: 100%;
+          text-align: left;
+          margin: 20px auto;
+          h3{
+            font-size: 30px;
+          }
+          i{
+            font-size: 30px;
+            display: inline;
+            margin-right: 20px;
+            font-weight: bold;
+          }
+          p{
+            font-size: 20px;
+            display: inline;
+          }
+          a{
+            text-decoration: none;
+            color: $crna;
+            font-size: 20px;
+            &:hover{
+              color: $svetloPlava;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  width: 100%;
+  background-color: $svetloPlava;
+  .wrapper{
+    @include center-block();
+    @include d-flex();
+    justify-content: space-evenly;
+    padding: 2rem;
+    .footer-copy{
+      padding-left: 2rem;
+    }
+    .footer-content{
+      width: 33%;
+      @include d-flex();
+      justify-content: center;
+      p{
+        font-size: 1.4rem;
+        display: inline;
+        margin-right: 3rem;
+      }
+      a{
+        color: $crna;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover{
+          color: $bela;
+        }
+      }
+      .iconify{
+        font-size: 2rem;
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+// RESPONSIVE START
+@media screen and (max-width: 2010px) {
+  main{
+    #projects{
+        padding-bottom: 17rem;
+        .wrapper{
+          .project-card{
+            p{
+              font-size: 2rem;
+            }
+          }
+        }
+    }
+    #about-me{
+      .wrapper{
+        #biography{
+          p{
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+  }
+}
+@media screen and (max-width: 1784px) {
+  main{
+    #about-me{
+      .wrapper{
+        #author{
+          width: 20%;
+        }
+        #biography{
+          p{
+            font-size: 17px;
+          }
+        }
+        #about-author{
+          margin-top: 50px;
+          h3{
+            font-size: 27px;
+          }
+        }
+      }
+    }
+    #projects{
+      .wrapper{
+        .project-card{
+          p{
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    #services{
+      .wrapper{
+        .service{
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1601px) {
+  main{
+    #services{
+      padding-bottom: 90px;
+      .wrapper{
+        .service{
+          width: 23%;
+          padding: 30px;
+          i{
+            font-size: 50px;
+          }
+          h2{
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    #about-me{
+      .wrapper{
+        #about-author{
+          margin-top: 50px;
+          h3{
+            font-size: 24px;
+          }
+          p{
+            font-size: 22px;
+          }
+        }
+        #author{
+          width: 23%;
+        }
+        #biography{
+          margin-top: 40px;
+          h3{
+            font-size: 25px;
+          }
+          p{
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+    #projects{
+      .wrapper{
+        .project-card{
+          width: 30%;
+        }
+      }
+    }
+    #skills{
+      .wrapper{
+        width: 60%;
+      }
+    }
+    #contact{
+      .wrapper{
+        #contact-content{
+          padding-left: 14rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1376px) {
+  main{
+    #projects{
+      padding-bottom: 14rem;
+      .wrapper{
+        .img-hover{
+          top: 90%;
+        }
+      }
+    }
+  }
+  footer{
+    .wrapper{
+      .footer-content{
+        p{
+          font-size: 1.2rem;
+        }
+        .iconify{
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1243px) {
+  .wrapper{
+    width: 95%;
+  }
+  main{
+    #background{
+      height: 800px;
+      .wrapper{
+        #img-title{
+          top: 41%;
+          left: 4%;
+          h1{
+            font-size: 60px;
+          }
+          .manji-tekst{
+            font-size: 32px;
+            color: $bela;
+          }
+          .veci-tekst{
+            font-size: 39px;
+            color: $bela;
+          }
+        }
+      }
+    }
+    #contact{
+      .title{
+        h2{
+          font-size: 30px;
+        }
+        p{
+          font-size: 17px;
+        }
+      }
+      .wrapper{
+        #contact-content{
+          padding-left: 8rem;
+          .contact-link{
+            h3{
+              font-size: 25px;
+            }
+            i{
+              font-size: 25px;
+              margin-right: 10px;
+            }
+            p{
+              font-size: 18px;
+            }
+            a{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    #about-me{
+      .title{
+        h2{
+          font-size: 30px;
+        }
+        p{
+          font-size: 17px;
+        }
+        hr{
+          width: 10rem;
+        }
+      }
+      .wrapper{
+        #author{
+          width: 25%;
+        }
+        #about-author{
+          margin-top: 40px;
+          p{
+            font-size: 19px;
+          }
+        }
+        #biography{
+          margin-top: 28px;
+          h3{
+            font-size: 23px;
+          }
+        }
+      }
+    }
+    #services{
+      .title{
+        h2{
+          font-size: 30px;
+        }
+        p{
+          font-size: 17px;
+        }
+        hr{
+          width: 9rem;
+        }
+      }
+    }
+    #projects{
+      .title{
+        h2{
+          font-size: 30px;
+        }
+        p{
+          font-size: 17px;
+        }
+        hr{
+          width: 11rem;
+        }
+      }
+      .wrapper{
+        justify-content: space-between;
+        .project-card{
+          width: 31%;
+        }
+      }
+    }
+    #skills{
+      .title{
+        h2{
+          font-size: 30px;
+        }
+        p{
+          font-size: 17px;
+        }
+        hr{
+          width: 8rem;
+        }
+      }
+      .wrapper{
+        width: 70%;
+      }
+    }
+  }
+  footer{
+    .wrapper{
+      .footer-content{
+        p{
+          font-size: 1rem;
+        }
+        .iconify{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1101px) {
+  header{
+    .wrapper{
+      text-align: center;
+      #logo{
+        width: 100%;
+        margin-top: 0.4rem;
+      }
+      nav{
+        margin: 1rem 0rem;
+        text-align: center;
+        width: 100%;
+        ul{
+          justify-content: center;
+        }
+      }
+    }
+  }
+  main{
+    #background{
+      .wrapper{
+        #img-title{
+          top: 39%;
+          left: 7%;
+        }
+      }
+    }
+    #skills{
+      .title{
+        padding-bottom: 30px;
+      }
+      .wrapper{
+        .skills-range{
+          margin-bottom: 20px;
+        }
+      }
+    }
+    #projects{
+      padding-bottom: 23%;
+      .wrapper{
+        .project-card{
+          width: 48%;
+          .img-hover{
+            top: 30%;
+          }
+        }
+        .sredina{
+          .img-hover{
+            top: 110%;
+          }
+        }
+        .gore{
+          padding-bottom: 35%;
+        }
+        .sredina{
+          margin: 0px auto;
+        }
+      }
+    }
+    #services{
+      .wrapper{
+        margin-top: 0px;
+        .service{
+          width: 45%;
+          padding: 20px;
+          h2{
+            font-size: 23px;
+          }
+          p{
+            font-size: 17px;
+            margin-top: 10px;
+          }
+        }
+        .servisi-gore{
+          margin-bottom: 2.7rem;
+        }
+      }
+    }
+    #about-me{
+      padding-bottom: 4rem;
+      .wrapper{
+        width: 95%;
+        #author{
+          width: 30%;
+        }
+      }
+    }
+    #contact{
+      .wrapper{
+        #contact-form{
+          #row-1{
+            #fname, #lname{
+              width: 48%;
+            }
+          }
+        }
+        #contact-content{
+          padding-left: 4rem;
+        }
+      }
+    }
+  }
+  footer{
+    .wrapper{
+      .footer-content{
+        width: 100%;
+        @include d-flex();
+        justify-content: center;
+        p{
+          margin: 0.7rem 1rem;
+          font-size: 0.9rem;
+        }
+        .iconify{
+          font-size: 1.3rem;
+          margin: 0.7rem 1rem 0rem 1rem;
+        }
+      }
+      .footer-copy{
+        padding: 0rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 842px) {
+  main{
+    #about-me{
+      .wrapper{
+        #biography{
+          margin-top: 15px;
+          h3{
+            font-size: 18px;
+          }
+          p{
+            font-size: 13.5px;
+          }
+        }
+        #about-author{
+          margin-top: 17px;
+          h3{
+            font-size: 18px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    #contact{
+      .wrapper{
+        #contact-form{
+          padding-right: 0px;
+        }
+        #contact-content{
+          padding-left: 1rem;
+        }
+      }
+    }
+    #projects{
+      .wrapper{
+        .project-card{
+          p{
+            font-size: 17px;
+          }
+        }
+        .sredina{
+          .img-hover{
+            top: 80%;
+          }
+        }
+      }
+    }
+    #skills{
+      .wrapper{
+        width: 80%;
+        .skills-range{
+          .info{
+            span{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    #background{
+      height: 780px;
+      .wrapper{
+        #img-title{
+          top: 35%;
+        }
+      }
+    }
+  }
+  header{
+    .wrapper{
+      #logo{
+        a{
+          font-size: 30px;
+        }
+      }
+      nav{
+        ul{
+          li{
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 731px) {
+  header{
+    .wrapper{
+      #logo{
+        a{
+          font-size: 28px;
+        }
+      }
+      nav{
+        ul{
+          li{
+            a{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  main{
+    #about-me{
+      .wrapper{
+        #biography{
+          h3{
+            font-size: 17px;
+          }
+          p{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    #contact{
+      .wrapper{
+        #contact-form{
+          #send{
+            width: 25%;
+          }
+        }
+        #contact-content{
+          .contact-link{
+            h3{
+              font-size: 20px;
+            }
+            i{
+              font-size: 20px;
+            }
+            p{
+              font-size: 16px;
+            }
+            a{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    #projects{
+      .wrapper{
+        .project-card{
+          .img-hover{
+            .text{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 656px) {
+  header{
+    .wrapper{
+      nav{
+        ul{
+          flex-direction: column;
+          justify-content: center;
+          li{
+            padding: 5px;
+            border-bottom: 2px solid $svetloPlava;
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  main{
+    #background{
+      .wrapper{
+        #img-title{
+          h1{
+            font-size: 45px;
+          }
+          .manji-tekst{
+            font-size: 25px;
+            color: $bela;
+          }
+          .veci-tekst{
+            font-size: 29px;
+            color: $bela;
+          }
+        }
+      }
+    }
+    #projects{
+      padding-bottom: 45%;
+      .wrapper{
+        .project-card{
+          width: 100%;
+          p{
+            margin-top: 7px;
+          }
+          .img-hover{
+            top: 70%;
+          }
+        }
+        .sredina{
+          .img-hover{
+            top: 115%;
+          }
+        }
+        .gore{
+          margin-bottom: 30%;
+        }
+      }
+    }
+    #services{
+      padding-bottom: 70px;
+      margin-top: 0px;
+      .wrapper{
+        .service{
+          width: 70%;
+          padding: 20px;
+        }
+        .servisi-dole{
+          margin-bottom: 2.7rem;
+        }
+      }
+    }
+    #about-me{
+      .wrapper{
+        #about-author{
+          margin-top: 0px;
+          width: 100%;
+        }
+        #author{
+          width: 50%;
+          margin-top: 50px;
+        }
+        #biography{
+          width: 80%;
+          margin-top: 50px;
+          text-align: center;
+          padding-left: 0px;
+          p{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    #contact{
+      padding-bottom: 45.5rem;
+      .wrapper{
+        padding-left: 0px;
+        #contact-form{
+          width: 100%;
+          padding: 10px 0px 20px 0px;
+          #row-1{
+            #fname{
+              width: 48.5%;
+            }
+            #lname{
+              width: 48.5%;
+            }
+          }
+        }
+        #contact-content{
+          width: 100%;
+          padding-left: 0rem;
+          .contact-link{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 417px) {
+  main{
+    #background{
+      height: 610px;
+      .wrapper{
+        #img-title{
+          left: 4%;
+          h1{
+            font-size: 40px;
+          }
+          .manji-tekst{
+            font-size: 20px;
+          }
+          .veci-tekst{
+            font-size: 23px;
+          }
+        }
+      }
+    }
+    #about-me{
+      .wrapper{
+        #author{
+          margin-top: 30px;
+        }
+        #biography{
+          margin-top: 30px;
+        }
+      }
+    }
+    #projects{
+      .wrapper{
+        .sredina{
+          .img-hover{
+            top: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+// RESPONSIVE END 

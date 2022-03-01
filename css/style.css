@@ -1,0 +1,1234 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0rem auto;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.6rem;
+}
+
+header .wrapper #logo {
+  margin-top: 0.6rem;
+}
+
+header .wrapper #logo a {
+  color: #000;
+  text-decoration: none;
+  font-size: 35px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header .wrapper #logo a:hover {
+  color: #b7bedb;
+}
+
+header .wrapper #logo a .drugo-slovo {
+  color: #b7bedb;
+}
+
+header .wrapper nav {
+  margin: 1.3rem 0rem;
+}
+
+header .wrapper nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .wrapper nav ul li {
+  margin: 0px 21px;
+}
+
+header .wrapper nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header .wrapper nav ul li a:hover {
+  color: #b7bedb;
+}
+
+main {
+  width: 100%;
+}
+
+main #background {
+  width: 100%;
+  height: 1050px;
+  background-image: url("/img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-filter: brightness(87%);
+          filter: brightness(87%);
+  position: relative;
+}
+
+main #background .wrapper {
+  width: 90%;
+  margin: 0rem auto;
+}
+
+main #background .wrapper #img-title {
+  position: absolute;
+  top: 37%;
+  left: 6%;
+}
+
+main #background .wrapper #img-title h1 {
+  font-size: 75px;
+  color: #b7bedb;
+}
+
+main #background .wrapper #img-title .manji-tekst {
+  font-size: 39px;
+  color: #fff;
+}
+
+main #background .wrapper #img-title .veci-tekst {
+  font-size: 45px;
+  color: #fff;
+}
+
+main #background .wrapper #img-title hr {
+  margin-top: 1rem;
+  border: 1px solid #b7bedb;
+  border-radius: 10px;
+}
+
+main #skills {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 90px;
+}
+
+main #skills .title {
+  text-align: center;
+  padding: 30px 0px 45px 0px;
+}
+
+main #skills .title h2 {
+  font-size: 40px;
+  color: #000;
+}
+
+main #skills .title hr {
+  border: 1px solid #000;
+  margin: 5px auto;
+  width: 10rem;
+}
+
+main #skills .title p {
+  font-size: 20px;
+}
+
+main #skills .wrapper {
+  width: 90%;
+  margin: 0rem auto;
+  width: 50%;
+}
+
+main #skills .wrapper .skills-range {
+  margin-bottom: 30px;
+}
+
+main #skills .wrapper .skills-range .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #skills .wrapper .skills-range .info span {
+  font-size: 25px;
+}
+
+main #skills .wrapper .skills-range .content-range {
+  height: 10px;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+}
+
+main #skills .wrapper .skills-range .content-range::before {
+  content: "";
+  position: absolute;
+  background-color: #b7bedb;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+main #skills .wrapper .skills-range .html::before {
+  width: 90%;
+}
+
+main #skills .wrapper .skills-range .css::before {
+  width: 70%;
+}
+
+main #skills .wrapper .skills-range .js::before {
+  width: 50%;
+}
+
+main #skills .wrapper .skills-range .c::before {
+  width: 60%;
+}
+
+main #skills .wrapper .skills-range .ps::before {
+  width: 90%;
+}
+
+main #skills .wrapper .skills-range .php::before {
+  width: 65%;
+}
+
+main #skills .wrapper .skills-range .python::before {
+  width: 70%;
+}
+
+main #projects {
+  width: 100%;
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 23rem;
+  background-color: #b7bedb;
+}
+
+main #projects .title {
+  text-align: center;
+  padding: 30px 0px 45px 0px;
+}
+
+main #projects .title h2 {
+  font-size: 40px;
+  color: #000;
+}
+
+main #projects .title hr {
+  border: 1px solid #000;
+  margin: 5px auto;
+  width: 20%;
+}
+
+main #projects .title hr {
+  width: 23%;
+}
+
+main #projects .title p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+main #projects .wrapper {
+  width: 90%;
+  margin: 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main #projects .wrapper .project-card {
+  width: 27%;
+  position: relative;
+  height: 100px;
+  text-align: center;
+}
+
+main #projects .wrapper .project-card:hover img {
+  opacity: 0.3;
+}
+
+main #projects .wrapper .project-card:hover .img-hover {
+  opacity: 1;
+}
+
+main #projects .wrapper .project-card p {
+  font-size: 23px;
+  margin-top: 10px;
+}
+
+main #projects .wrapper .project-card a {
+  color: #000;
+  text-decoration: none;
+}
+
+main #projects .wrapper .project-card img {
+  border: 2px solid #fff;
+  width: 100%;
+  -webkit-filter: blur(1.5px);
+          filter: blur(1.5px);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main #projects .wrapper .project-card img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+main #projects .wrapper .img-hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main #projects .wrapper .img-hover .text {
+  background-color: #b7bedb;
+  color: white;
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+main #services {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+
+main #services .title {
+  text-align: center;
+  padding: 30px 0px 45px 0px;
+}
+
+main #services .title h2 {
+  font-size: 40px;
+  color: #000;
+}
+
+main #services .title hr {
+  border: 1px solid #000;
+  margin: 5px auto;
+  width: 20%;
+}
+
+main #services .title hr {
+  width: 9.5%;
+}
+
+main #services .title p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+main #services .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 15px;
+}
+
+main #services .wrapper .service {
+  padding-top: 20px;
+  width: 19%;
+  text-align: center;
+  background-color: #b7bedb;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+main #services .wrapper .service i {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+main #services .wrapper .service h2 {
+  font-size: 30px;
+}
+
+main #services .wrapper .service p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+main #about-me {
+  width: 100%;
+  padding-bottom: 7rem;
+  background-color: #b7bedb;
+}
+
+main #about-me .title {
+  text-align: center;
+  padding: 30px 0px 45px 0px;
+}
+
+main #about-me .title h2 {
+  font-size: 40px;
+  color: #000;
+}
+
+main #about-me .title hr {
+  border: 1px solid #000;
+  margin: 5px auto;
+  width: 20%;
+}
+
+main #about-me .title hr {
+  width: 15.5%;
+}
+
+main #about-me .title p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+main #about-me .wrapper {
+  width: 90%;
+  margin: 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main #about-me .wrapper #author {
+  width: 18%;
+}
+
+main #about-me .wrapper #author img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+main #about-me .wrapper #about-author {
+  width: 30%;
+  margin-top: 80px;
+  text-align: center;
+}
+
+main #about-me .wrapper #about-author h3 {
+  font-size: 30px;
+}
+
+main #about-me .wrapper #about-author p {
+  font-size: 25px;
+  color: #fff;
+}
+
+main #about-me .wrapper #biography {
+  width: 30%;
+  margin-top: 50px;
+  padding-left: 25px;
+}
+
+main #about-me .wrapper #biography h3 {
+  font-size: 30px;
+}
+
+main #about-me .wrapper #biography p {
+  font-size: 1.55rem;
+  margin-top: 30px;
+}
+
+main #contact {
+  width: 100%;
+  background-color: #fff;
+  height: 585px;
+}
+
+main #contact .title {
+  text-align: center;
+  padding: 30px 0px 45px 0px;
+}
+
+main #contact .title h2 {
+  font-size: 40px;
+  color: #000;
+}
+
+main #contact .title hr {
+  border: 1px solid #000;
+  margin: 5px auto;
+  width: 20%;
+}
+
+main #contact .title hr {
+  width: 11%;
+}
+
+main #contact .title p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+main #contact .wrapper {
+  width: 90%;
+  margin: 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+}
+
+main #contact .wrapper #contact-form {
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+  width: 49%;
+  border-radius: 20px;
+}
+
+main #contact .wrapper #contact-form #row-1 {
+  width: 100%;
+}
+
+main #contact .wrapper #contact-form #row-1 #fname {
+  width: 49%;
+  margin-right: 1%;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+main #contact .wrapper #contact-form #row-1 #fname:focus {
+  border-color: #b7bedb;
+}
+
+main #contact .wrapper #contact-form #row-1 #lname {
+  width: 49%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+main #contact .wrapper #contact-form #row-1 #lname:focus {
+  border-color: #b7bedb;
+}
+
+main #contact .wrapper #contact-form #email {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-bottom: 1px solid #8f8f8f;
+  margin-bottom: 50px;
+}
+
+main #contact .wrapper #contact-form #email:focus {
+  border-color: #b7bedb;
+}
+
+main #contact .wrapper #contact-form #question {
+  font-size: 18px;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #8f8f8f;
+  width: 100%;
+}
+
+main #contact .wrapper #contact-form #question:focus {
+  border-color: #b7bedb;
+}
+
+main #contact .wrapper #contact-form #send {
+  font-size: 18px;
+  border: none;
+  background-color: #b7bedb;
+  color: #fff;
+  font-weight: 500;
+  width: 20%;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main #contact .wrapper #contact-form #send:hover {
+  background-color: #000;
+}
+
+main #contact .wrapper #contact-content {
+  width: 48%;
+  padding-left: 20rem;
+}
+
+main #contact .wrapper #contact-content .contact-link {
+  width: 100%;
+  text-align: left;
+  margin: 20px auto;
+}
+
+main #contact .wrapper #contact-content .contact-link h3 {
+  font-size: 30px;
+}
+
+main #contact .wrapper #contact-content .contact-link i {
+  font-size: 30px;
+  display: inline;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+main #contact .wrapper #contact-content .contact-link p {
+  font-size: 20px;
+  display: inline;
+}
+
+main #contact .wrapper #contact-content .contact-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+main #contact .wrapper #contact-content .contact-link a:hover {
+  color: #b7bedb;
+}
+
+footer {
+  width: 100%;
+  background-color: #b7bedb;
+}
+
+footer .wrapper {
+  width: 90%;
+  margin: 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2rem;
+}
+
+footer .wrapper .footer-copy {
+  padding-left: 2rem;
+}
+
+footer .wrapper .footer-content {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .wrapper .footer-content p {
+  font-size: 1.4rem;
+  display: inline;
+  margin-right: 3rem;
+}
+
+footer .wrapper .footer-content a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .wrapper .footer-content a:hover {
+  color: #fff;
+}
+
+footer .wrapper .footer-content .iconify {
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 2010px) {
+  main #projects {
+    padding-bottom: 17rem;
+  }
+  main #projects .wrapper .project-card p {
+    font-size: 2rem;
+  }
+  main #about-me .wrapper #biography p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1784px) {
+  main #about-me .wrapper #author {
+    width: 20%;
+  }
+  main #about-me .wrapper #biography p {
+    font-size: 17px;
+  }
+  main #about-me .wrapper #about-author {
+    margin-top: 50px;
+  }
+  main #about-me .wrapper #about-author h3 {
+    font-size: 27px;
+  }
+  main #projects .wrapper .project-card p {
+    font-size: 22px;
+  }
+  main #services .wrapper .service {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1601px) {
+  main #services {
+    padding-bottom: 90px;
+  }
+  main #services .wrapper .service {
+    width: 23%;
+    padding: 30px;
+  }
+  main #services .wrapper .service i {
+    font-size: 50px;
+  }
+  main #services .wrapper .service h2 {
+    font-size: 25px;
+  }
+  main #about-me .wrapper #about-author {
+    margin-top: 50px;
+  }
+  main #about-me .wrapper #about-author h3 {
+    font-size: 24px;
+  }
+  main #about-me .wrapper #about-author p {
+    font-size: 22px;
+  }
+  main #about-me .wrapper #author {
+    width: 23%;
+  }
+  main #about-me .wrapper #biography {
+    margin-top: 40px;
+  }
+  main #about-me .wrapper #biography h3 {
+    font-size: 25px;
+  }
+  main #about-me .wrapper #biography p {
+    margin-top: 15px;
+  }
+  main #projects .wrapper .project-card {
+    width: 30%;
+  }
+  main #skills .wrapper {
+    width: 60%;
+  }
+  main #contact .wrapper #contact-content {
+    padding-left: 14rem;
+  }
+}
+
+@media screen and (max-width: 1376px) {
+  main #projects {
+    padding-bottom: 14rem;
+  }
+  main #projects .wrapper .img-hover {
+    top: 90%;
+  }
+  footer .wrapper .footer-content p {
+    font-size: 1.2rem;
+  }
+  footer .wrapper .footer-content .iconify {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 1243px) {
+  .wrapper {
+    width: 95%;
+  }
+  main #background {
+    height: 800px;
+  }
+  main #background .wrapper #img-title {
+    top: 41%;
+    left: 4%;
+  }
+  main #background .wrapper #img-title h1 {
+    font-size: 60px;
+  }
+  main #background .wrapper #img-title .manji-tekst {
+    font-size: 32px;
+    color: #fff;
+  }
+  main #background .wrapper #img-title .veci-tekst {
+    font-size: 39px;
+    color: #fff;
+  }
+  main #contact .title h2 {
+    font-size: 30px;
+  }
+  main #contact .title p {
+    font-size: 17px;
+  }
+  main #contact .wrapper #contact-content {
+    padding-left: 8rem;
+  }
+  main #contact .wrapper #contact-content .contact-link h3 {
+    font-size: 25px;
+  }
+  main #contact .wrapper #contact-content .contact-link i {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  main #contact .wrapper #contact-content .contact-link p {
+    font-size: 18px;
+  }
+  main #contact .wrapper #contact-content .contact-link a {
+    font-size: 18px;
+  }
+  main #about-me .title h2 {
+    font-size: 30px;
+  }
+  main #about-me .title p {
+    font-size: 17px;
+  }
+  main #about-me .title hr {
+    width: 10rem;
+  }
+  main #about-me .wrapper #author {
+    width: 25%;
+  }
+  main #about-me .wrapper #about-author {
+    margin-top: 40px;
+  }
+  main #about-me .wrapper #about-author p {
+    font-size: 19px;
+  }
+  main #about-me .wrapper #biography {
+    margin-top: 28px;
+  }
+  main #about-me .wrapper #biography h3 {
+    font-size: 23px;
+  }
+  main #services .title h2 {
+    font-size: 30px;
+  }
+  main #services .title p {
+    font-size: 17px;
+  }
+  main #services .title hr {
+    width: 9rem;
+  }
+  main #projects .title h2 {
+    font-size: 30px;
+  }
+  main #projects .title p {
+    font-size: 17px;
+  }
+  main #projects .title hr {
+    width: 11rem;
+  }
+  main #projects .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main #projects .wrapper .project-card {
+    width: 31%;
+  }
+  main #skills .title h2 {
+    font-size: 30px;
+  }
+  main #skills .title p {
+    font-size: 17px;
+  }
+  main #skills .title hr {
+    width: 8rem;
+  }
+  main #skills .wrapper {
+    width: 70%;
+  }
+  footer .wrapper .footer-content p {
+    font-size: 1rem;
+  }
+  footer .wrapper .footer-content .iconify {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1101px) {
+  header .wrapper {
+    text-align: center;
+  }
+  header .wrapper #logo {
+    width: 100%;
+    margin-top: 0.4rem;
+  }
+  header .wrapper nav {
+    margin: 1rem 0rem;
+    text-align: center;
+    width: 100%;
+  }
+  header .wrapper nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #background .wrapper #img-title {
+    top: 39%;
+    left: 7%;
+  }
+  main #skills .title {
+    padding-bottom: 30px;
+  }
+  main #skills .wrapper .skills-range {
+    margin-bottom: 20px;
+  }
+  main #projects {
+    padding-bottom: 23%;
+  }
+  main #projects .wrapper .project-card {
+    width: 48%;
+  }
+  main #projects .wrapper .project-card .img-hover {
+    top: 30%;
+  }
+  main #projects .wrapper .sredina .img-hover {
+    top: 110%;
+  }
+  main #projects .wrapper .gore {
+    padding-bottom: 35%;
+  }
+  main #projects .wrapper .sredina {
+    margin: 0px auto;
+  }
+  main #services .wrapper {
+    margin-top: 0px;
+  }
+  main #services .wrapper .service {
+    width: 45%;
+    padding: 20px;
+  }
+  main #services .wrapper .service h2 {
+    font-size: 23px;
+  }
+  main #services .wrapper .service p {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  main #services .wrapper .servisi-gore {
+    margin-bottom: 2.7rem;
+  }
+  main #about-me {
+    padding-bottom: 4rem;
+  }
+  main #about-me .wrapper {
+    width: 95%;
+  }
+  main #about-me .wrapper #author {
+    width: 30%;
+  }
+  main #contact .wrapper #contact-form #row-1 #fname, main #contact .wrapper #contact-form #row-1 #lname {
+    width: 48%;
+  }
+  main #contact .wrapper #contact-content {
+    padding-left: 4rem;
+  }
+  footer .wrapper .footer-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .wrapper .footer-content p {
+    margin: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+  footer .wrapper .footer-content .iconify {
+    font-size: 1.3rem;
+    margin: 0.7rem 1rem 0rem 1rem;
+  }
+  footer .wrapper .footer-copy {
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 842px) {
+  main #about-me .wrapper #biography {
+    margin-top: 15px;
+  }
+  main #about-me .wrapper #biography h3 {
+    font-size: 18px;
+  }
+  main #about-me .wrapper #biography p {
+    font-size: 13.5px;
+  }
+  main #about-me .wrapper #about-author {
+    margin-top: 17px;
+  }
+  main #about-me .wrapper #about-author h3 {
+    font-size: 18px;
+  }
+  main #about-me .wrapper #about-author p {
+    font-size: 16px;
+  }
+  main #contact .wrapper #contact-form {
+    padding-right: 0px;
+  }
+  main #contact .wrapper #contact-content {
+    padding-left: 1rem;
+  }
+  main #projects .wrapper .project-card p {
+    font-size: 17px;
+  }
+  main #projects .wrapper .sredina .img-hover {
+    top: 80%;
+  }
+  main #skills .wrapper {
+    width: 80%;
+  }
+  main #skills .wrapper .skills-range .info span {
+    font-size: 20px;
+  }
+  main #background {
+    height: 780px;
+  }
+  main #background .wrapper #img-title {
+    top: 35%;
+  }
+  header .wrapper #logo a {
+    font-size: 30px;
+  }
+  header .wrapper nav ul li a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  header .wrapper #logo a {
+    font-size: 28px;
+  }
+  header .wrapper nav ul li a {
+    font-size: 13px;
+  }
+  main #about-me .wrapper #biography h3 {
+    font-size: 17px;
+  }
+  main #about-me .wrapper #biography p {
+    font-size: 13px;
+  }
+  main #contact .wrapper #contact-form #send {
+    width: 25%;
+  }
+  main #contact .wrapper #contact-content .contact-link h3 {
+    font-size: 20px;
+  }
+  main #contact .wrapper #contact-content .contact-link i {
+    font-size: 20px;
+  }
+  main #contact .wrapper #contact-content .contact-link p {
+    font-size: 16px;
+  }
+  main #contact .wrapper #contact-content .contact-link a {
+    font-size: 16px;
+  }
+  main #projects .wrapper .project-card .img-hover .text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  header .wrapper nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .wrapper nav ul li {
+    padding: 5px;
+    border-bottom: 2px solid #b7bedb;
+  }
+  header .wrapper nav ul li a {
+    font-size: 15px;
+  }
+  main #background .wrapper #img-title h1 {
+    font-size: 45px;
+  }
+  main #background .wrapper #img-title .manji-tekst {
+    font-size: 25px;
+    color: #fff;
+  }
+  main #background .wrapper #img-title .veci-tekst {
+    font-size: 29px;
+    color: #fff;
+  }
+  main #projects {
+    padding-bottom: 45%;
+  }
+  main #projects .wrapper .project-card {
+    width: 100%;
+  }
+  main #projects .wrapper .project-card p {
+    margin-top: 7px;
+  }
+  main #projects .wrapper .project-card .img-hover {
+    top: 70%;
+  }
+  main #projects .wrapper .sredina .img-hover {
+    top: 115%;
+  }
+  main #projects .wrapper .gore {
+    margin-bottom: 30%;
+  }
+  main #services {
+    padding-bottom: 70px;
+    margin-top: 0px;
+  }
+  main #services .wrapper .service {
+    width: 70%;
+    padding: 20px;
+  }
+  main #services .wrapper .servisi-dole {
+    margin-bottom: 2.7rem;
+  }
+  main #about-me .wrapper #about-author {
+    margin-top: 0px;
+    width: 100%;
+  }
+  main #about-me .wrapper #author {
+    width: 50%;
+    margin-top: 50px;
+  }
+  main #about-me .wrapper #biography {
+    width: 80%;
+    margin-top: 50px;
+    text-align: center;
+    padding-left: 0px;
+  }
+  main #about-me .wrapper #biography p {
+    font-size: 15px;
+  }
+  main #contact {
+    padding-bottom: 45.5rem;
+  }
+  main #contact .wrapper {
+    padding-left: 0px;
+  }
+  main #contact .wrapper #contact-form {
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+  }
+  main #contact .wrapper #contact-form #row-1 #fname {
+    width: 48.5%;
+  }
+  main #contact .wrapper #contact-form #row-1 #lname {
+    width: 48.5%;
+  }
+  main #contact .wrapper #contact-content {
+    width: 100%;
+    padding-left: 0rem;
+  }
+  main #contact .wrapper #contact-content .contact-link {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 417px) {
+  main #background {
+    height: 610px;
+  }
+  main #background .wrapper #img-title {
+    left: 4%;
+  }
+  main #background .wrapper #img-title h1 {
+    font-size: 40px;
+  }
+  main #background .wrapper #img-title .manji-tekst {
+    font-size: 20px;
+  }
+  main #background .wrapper #img-title .veci-tekst {
+    font-size: 23px;
+  }
+  main #about-me .wrapper #author {
+    margin-top: 30px;
+  }
+  main #about-me .wrapper #biography {
+    margin-top: 30px;
+  }
+  main #projects .wrapper .sredina .img-hover {
+    top: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
